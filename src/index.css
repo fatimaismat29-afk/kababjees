@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-condensed: 'Oswald', sans-serif;
+    --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-body);
+    background-color: #0b0c10;
+    color: #f1f2f6;
+  }
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-condensed {
+  font-family: var(--font-condensed);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* Custom glow and backdrop effects */
+.glow-red {
+  box-shadow: 0 0 35px -5px rgba(225, 29, 42, 0.45);
+}
+
+.glow-gold {
+  box-shadow: 0 0 30px -5px rgba(245, 158, 11, 0.4);
+}
+
+/* Custom scrollbar for menu filter and drawers */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1015;
+}
+::-webkit-scrollbar-thumb {
+  background: #272a36;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e11d2a;
+}
